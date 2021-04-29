@@ -4,9 +4,21 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+// 
+import {createStore} from 'redux'
+import {Provider} from 'react-redux'
+// we do default export 
+import Reducer from './Service/Reducer/RootReudcer'
+const store=createStore(Reducer);
+console.log(store);
+// 
+
+
 ReactDOM.render(
   <React.StrictMode>
+    <Provider store={store}>
     <App />
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );
