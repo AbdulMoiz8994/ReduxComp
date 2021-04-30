@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Home =(props) =>{
-    console.log(props.Data)
+    console.log(props)
     return(
         <div>
      <h1>This is Home</h1>
