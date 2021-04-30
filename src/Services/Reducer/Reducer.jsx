@@ -1,18 +1,21 @@
 import {ADD_TO_CART} from '../Types'
 
+
+
 const initialValue={
-    CardData:[]
+    CardItem:[]
 }
 
-export const Reducer=(state=initialValue,action) =>{
+export const Reducer=(state=initialValue,action)=>{
+
     switch(action.type){
         case ADD_TO_CART:
-            console.log(action);
+            console.log(action.data);
             return{
                 ...state,
-                CardData: action.data
+                CardItem: action.data
             }
             default:
-            return state
+             return state 
     }
 }

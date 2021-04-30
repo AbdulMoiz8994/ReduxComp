@@ -1,0 +1,7 @@
+# we are ignoring node modules folder
+# dependencies
+/node_modules
+
+
+# production
+/build

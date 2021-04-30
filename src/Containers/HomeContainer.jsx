@@ -1,15 +1,15 @@
-// import react-redux
-import {connect} from 'react-redux'
-import {ADDCART} from '../Service/Actions/Action'
 import Home from '../Components/Home';
-// export {Home} from '../Components/Home';
+import {connect} from 'react-redux'
+import {Action} from '../Services/Action/Action'
 
-// we will make a function which will save our data in store
-const mapDispatchToProps=(dispatch) =>({
-       addToCardHandler: (data) => dispatch(ADDCART(data))
+// This function send the data in store
+const mapDispatchToppProps=(dispatch) =>({
+    addToCard: data => dispatch(Action(data))
 })
+// This function send data from where the request will come it could be any components etc
 const mapStateToProps=(state) =>({
-   Data: state
+    Data: state.Reducer.CardItem
 })
-export default connect(mapStateToProps,mapDispatchToProps)(Home)
+export default connect(mapStateToProps,mapDispatchToppProps)(Home)
 
+// export default Home;

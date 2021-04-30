@@ -1,12 +1,13 @@
-import React from 'react'
+import React from 'react';
 
-const Home = (props) => {
-    console.warn("Home" ,props);
-    return (
-        <div className="home">
-            <h1>Hoem Comp</h1>
-            <button onClick={() => props.addToCardHandler({price: 1000, iphone: "11 Pro"})}>Click here</button>
+const Home =(props) =>{
+    console.log(props.Data)
+    return(
+        <div>
+     <h1>This is Home</h1>
+     <button onClick={() => props.addToCard({name: "Abdul Moiz"})}>Click Here</button>
         </div>
     )
 }
+
 export default Home;

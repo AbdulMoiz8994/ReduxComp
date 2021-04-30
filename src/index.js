@@ -1,26 +1,24 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
 
-// 
-import {createStore} from 'redux'
-import {Provider} from 'react-redux'
-// we do default export 
-import Reducer from './Service/Reducer/RootReudcer'
-const store=createStore(Reducer);
+// we make an sote where we wrap our all comp
+import { createStore } from "redux";
+import { Provider } from "react-redux";
+import Reducer from "./Services/Reducer/RootReducer";
+const store = createStore(Reducer);
 console.log(store);
-// 
-
 
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
-    <App />
+      <App />
     </Provider>
   </React.StrictMode>,
-  document.getElementById('root')
+
+  document.getElementById("root")
 );
 
 // If you want to start measuring performance in your app, pass a function

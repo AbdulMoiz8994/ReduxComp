@@ -1,15 +1,14 @@
 import React from 'react';
 import './App.css';
-// import {User} from './Props/User'
 
-// import components via container
+// import home
 import Home from './Containers/HomeContainer'
 
 function App() {
   return (
     <div className="App">
-  {/* <User data={{name:" ABdul Moiz",age:20}}/> */}
-  <Home/>
+<h1>Hello Wolrd</h1>
+<Home/>
     </div>
   );
 }
