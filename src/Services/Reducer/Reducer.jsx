@@ -6,15 +6,15 @@ const initialValue={
     CardItem:[]
 }
 
-export const Reducer=(state=initialValue,action)=>{
+export const Reducer=(state=[],action)=>{
 
     switch(action.type){
         case ADD_TO_CART:
             console.log(action.data);
-            return{
+            return[
                 ...state,
-                CardItem: action.data
-            }
+                {CardItem: action.data},
+            ]
             default:
              return state 
     }

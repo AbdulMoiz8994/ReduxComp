@@ -8,7 +8,7 @@ const mapDispatchToppProps=(dispatch) =>({
 })
 // This function send data from where the request will come it could be any components etc
 const mapStateToProps=(state) =>({
-    Data: state.Reducer.CardItem
+    Data: state.Reducer
 })
 export default connect(mapStateToProps,mapDispatchToppProps)(Home)
 
