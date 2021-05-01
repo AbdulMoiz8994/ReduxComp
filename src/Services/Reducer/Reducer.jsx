@@ -1,10 +1,10 @@
-import {ADD_TO_CART} from '../Types'
+import {ADD_TO_CART,REMOVE_TO_CART} from '../Types'
 
 
 
-const initialValue={
-    CardItem:[]
-}
+// const initialValue={
+//     CardItem:[]
+// }
 
 export const Reducer=(state=[],action)=>{
 
@@ -14,7 +14,12 @@ export const Reducer=(state=[],action)=>{
             return[
                 ...state,
                 {CardItem: action.data},
-            ]
+            ];
+            case REMOVE_TO_CART:
+                state.pop();
+                return[
+                  ...state,
+                ];
             default:
              return state 
     }

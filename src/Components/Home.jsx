@@ -7,7 +7,9 @@ const Home =(props) =>{
      <h1>This is Home</h1>
      {/* {props.Data.length} */}
      <br/>
-     <button onClick={() => props.addToCard({name: "Abdul Moiz"})}>Click Here</button>
+     <button onClick={() => {props.addToCard({name: "Abdul Moiz"})}}>Click Here</button>
+     <br/>
+     <button onClick={() => {props.removeTOCard({})}}>Remove Cart</button>
         </div>
     )
 }
