@@ -4,16 +4,14 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
-// we make an sote where we wrap our all comp
-import { createStore } from "redux";
-import { Provider } from "react-redux";
-import Reducer from "./Services/Reducer/RootReducer";
-const store = createStore(Reducer);
-console.log(store);
 
+import { Provider } from "react-redux";
+import Store from "./ThapaRedux/Store";
+
+ Store.subscribe(() => console.log(Store.getState()))
 ReactDOM.render(
   <React.StrictMode>
-    <Provider store={store}>
+    <Provider store={Store}>
       <App />
     </Provider>
   </React.StrictMode>,
