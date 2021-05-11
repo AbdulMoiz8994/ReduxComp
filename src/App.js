@@ -15,9 +15,9 @@ function App() {
   <h2>Using React and Redux</h2>
 </div>
     <div>
-     <button onClick={() => dispatch(DecNumber())}><span>-</span></button>
+     <button onClick={() => dispatch(DecNumber(5))}><span>-</span></button>
       <input type="text" name="quantity" value={getInitial}/>
-     <button onClick={() => dispatch(IncNumber())}><span>+</span></button>
+     <button onClick={() => dispatch(IncNumber(5))}><span>+</span></button>
     </div>
     </div>
   );

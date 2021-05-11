@@ -1,14 +1,16 @@
 import React from 'react'
 
 
-export const IncNumber=() =>{
+export const IncNumber=(numb) =>{
     return{
-        type: 'INCREMENT'
+        type: 'INCREMENT',
+        payload: numb
     }  
 }
 
-export const DecNumber=() =>{
+export const DecNumber=(numb) =>{
     return{
-        type: "DECREMENT"
+        type: "DECREMENT",
+        payload: numb
     }
 }
