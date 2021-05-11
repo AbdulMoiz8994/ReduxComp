@@ -9,6 +9,7 @@ import { Provider } from "react-redux";
 import Store from "./ThapaRedux/Store";
 
  Store.subscribe(() => console.log(Store.getState()))
+//  we make provider becuase we need provide all comp access of our centralize store 
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={Store}>

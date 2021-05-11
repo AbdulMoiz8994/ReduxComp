@@ -1,9 +1,13 @@
 import React from 'react';
 import './App.css';
-
+import {useSelector,useDispatch} from 'react-redux'
+import {IncNumber,DecNumber} from './ThapaRedux/Action/Action'
 
 
 function App() {
+
+  const getInitial=useSelector((state) => state.UseReducer)
+   const dispatch=useDispatch()
   return (
     <div className="App">
 <div>
@@ -11,9 +15,9 @@ function App() {
   <h2>Using React and Redux</h2>
 </div>
     <div>
-     <button><span>-</span></button>
-      <input type="text" name="quantity" value="0"/>
-     <button><span>+</span></button>
+     <button onClick={() => dispatch(DecNumber())}><span>-</span></button>
+      <input type="text" name="quantity" value={getInitial}/>
+     <button onClick={() => dispatch(IncNumber())}><span>+</span></button>
     </div>
     </div>
   );
