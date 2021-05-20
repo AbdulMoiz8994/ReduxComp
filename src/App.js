@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import {useSelector,useDispatch} from 'react-redux'
 import {IncNumber,DecNumber} from './ThapaRedux/Action/Action'
-
+import {Mutiply} from './ThapaRedux/THAPAREDUX2/Mutiply'
 
 function App() {
 
@@ -18,6 +18,10 @@ function App() {
      <button onClick={() => dispatch(DecNumber(5))}><span>-</span></button>
       <input type="text" name="quantity" value={getInitial}/>
      <button onClick={() => dispatch(IncNumber(5))}><span>+</span></button>
+    </div>
+{/* sub Div */}
+    <div>
+<Mutiply/>
     </div>
     </div>
   );
