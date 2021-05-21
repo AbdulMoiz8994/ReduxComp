@@ -1,4 +1,3 @@
-import React from 'react'
 
 const initialValue=5
 export const MutandDiv = (state=initialValue,action) => {
