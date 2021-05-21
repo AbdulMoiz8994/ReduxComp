@@ -14,7 +14,7 @@ script:
 deploy:
   provider: surge
   skip_cleanup: true
-  domain: efficient-cent.surge.sh
+  domain: skillful-measure.surge.sh
   project: ./build/  
 
 
