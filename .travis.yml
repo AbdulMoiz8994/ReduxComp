@@ -14,7 +14,7 @@ script:
 deploy:
   provider: surge
   skip_cleanup: true
-  domain: skillful-measure.surge.sh
+  domain: reac-test-app.surge.sh
   project: ./build/  
 
 
