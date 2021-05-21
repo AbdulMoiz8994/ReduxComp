@@ -3,6 +3,7 @@ import './App.css';
 import {useSelector,useDispatch} from 'react-redux'
 import {IncNumber,DecNumber} from './ThapaRedux/Action/Action'
 import {Mutiply} from './ThapaRedux/THAPAREDUX2/Mutiply'
+import {About} from './Test-Case/About'
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
   return (
     <div className="App">
 <div>
+  <h1>learn React</h1>
   <h1>Increment/Decrment</h1>
   <h2>Using React and Redux</h2>
 </div>
@@ -23,6 +25,7 @@ function App() {
     <div>
 <Mutiply/>
     </div>
+    <About/>
     </div>
   );
 }
